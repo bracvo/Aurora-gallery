@@ -11,7 +11,7 @@ export default function Layout({ children }) {
           <NavLink to="/contact">Contact</NavLink>
         </nav>
       </header>
-      <main className="page">
+      <main className="page animate-in">
         {children}
       </main>
     </div>
