@@ -159,7 +159,6 @@ body {
 .contact-form button {
   justify-self: start;
   padding: 10px 18px;
-  border: none;
   border-radius: 8px;
   background: #1f1f1f;
   color: #fff;
@@ -191,3 +190,138 @@ body {
   font-size: 20px;
   cursor: pointer;
 }
+
+/* ---- Favorites page (new) ---- */
+.favorites-page h1 { margin-bottom: 4px; }
+
+.favorites-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 18px;
+  margin-top: 20px;
+}
+
+.favorite-card {
+  position: relative;
+  overflow: hidden; /* clips card corners AND the options menu below */
+  border-radius: 14px;
+  border: 1px solid #eae7de;
+  background: #fff;
+}
+
+.favorite-art { height: 130px; }
+.favorite-art--sand { background: #d8a35a; }
+.favorite-art--lavender { background: #b7a6d9; }
+.favorite-art--teal { background: #9bc1c2; }
+
+.favorite-card-body {
+  position: relative;
+  padding: 12px 14px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 14px;
+}
+
+.favorite-menu-trigger {
+  border: none;
+  background: transparent;
+  font-size: 18px;
+  line-height: 1;
+  cursor: pointer;
+  padding: 4px 8px;
+}
+
+.favorite-menu {
+  position: absolute;
+  top: 44px;
+  right: 8px;
+  z-index: 999; /* high, but irrelevant: clipped by favorite-card's overflow:hidden */
+  width: 190px;
+  margin: 0;
+  padding: 6px;
+  list-style: none;
+  background: #fff;
+  border: 1px solid #e0ddd4;
+  border-radius: 10px;
+  box-shadow: 0 12px 28px rgba(0,0,0,0.12);
+}
+
+.favorite-menu-option {
+  width: 100%;
+  text-align: left;
+  padding: 8px 10px;
+  border: none;
+  background: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+}
+.favorite-menu-option:hover { background: #f2f0ea; }
+/* ---- Favorites page (new) ---- */
+.favorites-page h1 { margin-bottom: 4px; }
+
+.favorites-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 18px;
+  margin-top: 20px;
+}
+
+.favorite-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 14px;
+  border: 1px solid #eae7de;
+  background: #fff;
+}
+
+.favorite-art { height: 130px; }
+.favorite-art--sand { background: #d8a35a; }
+.favorite-art--lavender { background: #b7a6d9; }
+.favorite-art--teal { background: #9bc1c2; }
+
+.favorite-card-body {
+  position: relative;
+  padding: 12px 14px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 14px;
+}
+
+.favorite-menu-trigger {
+  border: none;
+  background: transparent;
+  font-size: 18px;
+  line-height: 1;
+  cursor: pointer;
+  padding: 4px 8px;
+}
+
+.favorite-menu {
+  position: absolute;
+  top: 44px;
+  right: 8px;
+  z-index: 999;
+  width: 190px;
+  margin: 0;
+  padding: 6px;
+  list-style: none;
+  background: #fff;
+  border: 1px solid #e0ddd4;
+  border-radius: 10px;
+  box-shadow: 0 12px 28px rgba(0,0,0,0.12);
+}
+
+.favorite-menu-option {
+  width: 100%;
+  text-align: left;
+  padding: 8px 10px;
+  border: none;
+  background: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+}
+.favorite-menu-option:hover { background: #f2f0ea; }

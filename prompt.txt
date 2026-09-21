@@ -1,0 +1,5 @@
+I am attaching a screenshot of a bug in the Aurora Gallery app. On the home page, when I click the Sort dropdown in the top right corner, the menu opens but part of it is hidden behind the sticky site header, so I cannot read or click the first couple of options.
+
+Please fix this so the dropdown menu is always fully visible above the header when open, no matter where it is on the page. While you are in there, please also make sure the dropdown is keyboard accessible: pressing Escape should close it, and focus should return to the Sort button afterward.
+
+Do not just hide the problem with a quick patch, fix the actual cause. Please also make sure you do not break anything else on the other pages (Collections, Contact) while fixing this, and confirm your fix by actually running the app and checking the rendered result, not just reading the code.
